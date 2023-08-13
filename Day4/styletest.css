@@ -27,8 +27,8 @@ body {
     margin: 0px;
     display: inline-block;
 }
-.right-div{
-    border: 1px solid blanchedalmond;
+#right-div{
     box-shadow: 10px;
+    border-radius: 7px;
 }
 
