@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor: #07df71;
+    --gray: #8c8c8c;
+    --mainFont:  'Bricolage Grotesque', sans-serif;
+    --light: 300;
+    --medium: 400;
+    --bold: 500;
+    --extraBold: 700;
+}
+
+nav {
+    display: flex;
+    background-color: var(--mainColor);
+}
+
+nav div {
+    padding: 1.8rem 6.2rem;
+    background-color: white;
+}
+
+nav img {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 3rem;
+}
+nav ul li {
+    list-style: none;
+    font-family: var(--mainFont);
+    font-weight: var(--medium);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header{
+    background-color: var(--mainColor);
+    height: fit-content;
+}
+.image{
+    height: 85vh;
+    width: 75%;
+    background-image: url('./assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(1); */
+    
+    position: relative;
+}
+
+.image > span {
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    position: absolute;
+    height: 2rem;
+    box-shadow: 0.5rem 0.5rem 20px 0px rgba(0, 0, 0, 0.229);
+}
+.minus, .plus{
+    height: 2rem;
+}
+.image > span:first-of-type{
+    left: 5.2rem;
+    bottom: 55%;
+}
+.image > span:last-of-type{
+    left: 5rem;
+    bottom: 45%;
+}
+
+article{
+    position: absolute;
+    height: 45vh;
+    width: 37vw;
+    left: 77%;
+    top: 24%;
+    background-color: white;
+    padding: 4.8rem 3.1rem ;
+    box-shadow: 0.5rem 0.5rem 20px 0px rgba(0, 0, 0, 0.229);
+}
+article::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    width: 115px;
+    height: 100%;
+    background-color: #00ff7bc9;
+    mix-blend-mode:multiply
+}
+article h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    width: fit-content;
+    position: relative;
+    font-weight: var(--bold);
+    margin-bottom: 0.3rem;
+    font-family: var(--mainFont);
+}
+article h1::after{
+    position: absolute;
+    content: "";
+    top: 70%;
+    left: 0%;
+    height: 6px;
+    width: 100%;
+    background-color: #07df6fa1;
+
+}
+article p {
+    margin-top: 2rem;
+    line-height: 1.4;
+    font-weight: var(--light);
+    color: var(--gray);
+    font-family: var(--mainFont);
+}
+button{
+    width: fit-content;
+    background-color: var(--mainColor);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-family: var(--mainFont);
+    font-weight: var(--light);
+    text-transform: capitalize;
+    padding: 1.4rem 3.2rem;
+    font-size: 1.1rem;
+}
+article button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0.5rem 0.5rem 20px 0px rgba(0, 0, 0, 0.229);
+}
+section {
+    position: absolute;
+    right: 7rem;
+    top: 93%;
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+section > img {
+    width: 1.1rem;
+}
+.services{
+    margin-top: 5.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.services div {
+    width: 20%;
+    text-align: center;
+}
+.services > div {
+    font-family: var(--mainFont);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.services div:first-child{
+    text-align: start;
+}
+.services div h1, .services div p, .services div h3 {
+    font-family: var(--mainFont);
+}
+.services div p {
+    color: var(--gray);
+    line-height: 1.4;
+    font-size: 1rem;
+}
+.services div h3{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-weight: var(--medium);
+}
+.services div:first-child h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    font-weight: var(--bold);
+}
+.services div:first-child h1::after{
+    position: absolute;
+    content: "";
+    top: 70%;
+    left: 0%;
+    height: 6px;
+    width: 100%;
+    background-color: #07df6fa1;
+}
+.services div img{
+    width: 3rem;
+    align-self: center;
+}
+.services div:last-child p {
+    font-weight: var(--light);
+}
